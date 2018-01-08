@@ -126,7 +126,7 @@ ul span {
   background-color: white;
 }
 
-h5 {
+h4 {
   display: block;
 }
 
@@ -136,6 +136,19 @@ h5 {
     margin-right: 2rem;
     padding: .75rem 4rem .75rem 4rem;
     font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .flex-main {
+    margin-top: 9rem;
+    font-size: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
   }
 }
 
@@ -150,8 +163,7 @@ h5 {
 
 .product {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
   height: 8rem;
   width: 5rem;
   margin: 3rem 6rem;
@@ -160,6 +172,19 @@ h5 {
 
 .product img {
   width: 3.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .products {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 3.77rem;
+    align-items: center;
+  }
+  .product span {
+    font-size: .77rem;
+    margin-bottom: 1.54rem;
+  }
 }
 
 /*Philosophy and Appointments */
@@ -185,11 +210,30 @@ h5 {
   color: white;
 }
 
-/* Footer */
+@media only screen and (max-width: 480px) {
+  .idea {
+    flex-direction: column;
+    width: 100%;
+  }
 
-footer {
+  .flex {
+    margin: 0;
+    width: 100%;
+  }
 
+  .blue {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .flex p {
+    font-size: .77rem;
+    margin-bottom: 4rem;
+  }
 }
+
+/* Footer */
 
 .footer {
   display: flex;
@@ -201,4 +245,15 @@ footer {
 .logo {
   height: 1.5rem;
   padding: 4rem 1rem 4rem 4rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .footer span {
+    display: none;
+  }
+
+  .footer {
+    justify-content: center;
+    width: 100%;
+  }
 }
