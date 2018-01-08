@@ -3,33 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>Tortoiseshell Optics</title>
-    <link rel="alternate" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
   </head>
 
   <body>
     <!-- Header -->
     <header>
-      <div class="menu">
+      <nav class="menu container">
+
         <div class="company">
           <img src="resources/logo-white.png" alt="White glasses logo">
           <span>Tortoiseshell Optics</span>
         </div>
-        <nav>
-          <span>Services</span>
-          <span>Products</span>
-          <span>Contact</span>
-        </nav>
-      </div>
-    </header>
+        <div class="nav">
+          <ul id="scroll">
+            <span>Services</span>
+            <span>Products</span>
+            <span>Contact</span>
+          </ul>
+          <ul id="menu">
+            <span>Menu</span>
+          </ul>
+        </div>
+
+      </nav>
+
     <!-- Main Section -->
-    <div class="main">
+    <div class="main container">
       <div class="flex-main">
-        <h2>DON'T JUST LOOK, SEE.</h2>
+        <h5>DON'T JUST LOOK, SEE.</h5>
       </div>
     </div>
-
+  </div>
+</header>
     <!-- Different Options -->
-    <div class="products">
+    <div class="products container">
       <div class="product">
         <div class="exams">
           <img src="resources/paper-icon.png" alt="Paper exam">
@@ -53,7 +61,7 @@
     </div>
 
     <!-- Philosophy and Appointments -->
-    <div class="idea">
+    <div class="idea container">
       <div class="flex">
         <div class="blue">
         <h3>PHILOSOPHY</h3>
@@ -69,13 +77,16 @@
     </div>
 
     <!-- Footer -->
-    <footer>
+    <footer class="container">
+
       <div class="footer">
         <div class="logo">
           <img src="resources/logo-black.png" alt="Black glasses logo">
+          </div>
           <span>Copyright Tortoiseshell Optics</span>
-        </div>          
+
       </div>
+
     </footer>
 
   </body>

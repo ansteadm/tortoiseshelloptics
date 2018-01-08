@@ -1,0 +1,204 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica, sans-serif;
+  background-color: white;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+div {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* Main Background Image */
+
+header {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 31rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+}
+
+/* Header menu */
+
+nav {
+  padding: 1rem 0;
+  background-color: cadetblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  margin: auto;
+}
+
+.company {
+  display: flex;
+  align-content: center;
+  color: white;
+  font-size: 1rem;
+}
+
+.company img {
+  height: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+ul {
+  display: block;
+  margin-right: 1rem;
+}
+
+#menu {
+  display: none;
+}
+
+ul span {
+  padding: 1rem 2rem 1rem 0;
+}
+
+.nav {
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 22rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #scroll {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  .company span {
+    display: none;
+  }
+}
+
+/* Flex Main */
+
+.main {
+  display: flex;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  justify-content: flex-end;
+}
+
+.flex-main {
+  margin-top: 10rem;
+  margin-right: 2rem;
+  padding: 1.5rem 5rem;
+  background-color: white;
+}
+
+h5 {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .flex-main {
+    margin-top: 5rem;
+    margin-right: 2rem;
+    padding: .75rem 4rem .75rem 4rem;
+    font-size: 1.33rem;
+  }
+}
+
+
+/* Services */
+
+.products {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 8rem;
+  width: 5rem;
+  margin: 3rem 6rem;
+  text-align: center;
+}
+
+.product img {
+  width: 3.5rem;
+}
+
+/*Philosophy and Appointments */
+
+.idea {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.flex {
+  margin-right: 5%;
+  width: 35%;
+}
+
+.blue {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: .5rem 1.25rem .5rem 1.25rem;
+  background-color: cadetblue;
+  width: 10rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+/* Footer */
+
+footer {
+
+}
+
+.footer {
+  display: flex;
+  margin-top: 5rem;
+  background-color: azure;
+  align-items: center;
+}
+
+.logo {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
